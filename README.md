@@ -6,9 +6,10 @@ Este documento apresenta o plano de ação para o desenvolvimento do GuaSuporte,
 
 ## Interface do Cliente
 
-Design meramente ilustrativo
+<em>Design meramente ilustrativo<em>
 
 ![Interface do Cliente](chat_interface.png)
+![Design Demonstrativo](https://preview--chat-circle-interface-23.lovable.app/)
 
 A interface será desenvolvida utilizando **LitJS**, garantindo um sistema leve, modular e de fácil manutenção. A comunicação em tempo real será feita utilizando **Server-Sent Events (SSE)** com servidores assincronos **Python aiohttp / Kotlin Ktor / Rust Warp**, permitindo atualizações dinâmicas e interações em tempo real.
 
@@ -18,7 +19,7 @@ A interface será desenvolvida utilizando **LitJS**, garantindo um sistema leve,
 - **Servidor Python aiohttp / Kotlin Ktor / Kotlin Vertx / Rust Warp** para orquestrar as requisições
 - **Server-Sent Events (SSE)** para comunicação em tempo real
 - **DeepSeek/ChatGpt/Outra API** para assistência automatizada
-- **Postgres vectorizado**: Banco de dados vetorial para armazenamento e indexação de dados vetoriais
+- **Qdrant ou Postgres Vector**: Banco de dados vetorial para armazenamento e indexação de dados vetoriais
 
 ## Features
 
@@ -85,7 +86,7 @@ O Cliente (interface do usuário) envia uma solicitação de suporte ao Servidor
 ## Proximos Passos
 
 ### Dashboard para Análises e Configurações manuais
-Com o objetivo de analisar os padrões de uso, acompanhar a usabilidade, e configurar parametros, precisamos de um dashboard para:
+Apos o Chat estar no ar, com o objetivo de analisar os padrões de uso, acompanhar a usabilidade, e configurar parametros, precisamos de um dashboard para:
 
 - Ajustar o system prompt para definir comportamento e estilo de resposta
 - Definições de recursos a serem utilizados como contexto
@@ -93,4 +94,9 @@ Com o objetivo de analisar os padrões de uso, acompanhar a usabilidade, e confi
 - Analise de perguntas
 - Construção de FAQs
 
+<em>Design meramente ilustrativo<em>
 [Design Demonstrativo](https://preview--chatmanage-gateway.lovable.app/faq)
+
+### Suporte ao Desenvolvedor
+
+Uma copia simplificada da interface do chatgpt, com o objetivo de responder em formato de texto, perguntas relacionados a regra de negocio. Utiliza a mesma arquitetura do suporte ao cliente, sem a parte do analise de usabilidade, pois não sera necessario.
