@@ -4,12 +4,15 @@
 
 Este documento apresenta o plano de ação para o desenvolvimento do GuaSuporte, uma solução integrada de suporte com inteligência artificial (AI). O projeto visa otimizar a experiência do usuário ao oferecer um atendimento eficiente, automatizado e responsivo.
 
+### Estimativas
+Tempo de desenvolvimento entre 8-12 semanas para a primeira fase. Entre 4-8 para a segunda.
+
+
 ## Interface do Cliente
 
 <em>Design meramente ilustrativo<em>
 
 ![Interface do Cliente](chat_interface.png)
-![Design Demonstrativo](https://preview--chat-circle-interface-23.lovable.app/)
 
 A interface será desenvolvida utilizando **LitJS**, garantindo um sistema leve, modular e de fácil manutenção. A comunicação em tempo real será feita utilizando **Server-Sent Events (SSE)** com servidores assincronos **Python aiohttp / Kotlin Ktor / Rust Warp**, permitindo atualizações dinâmicas e interações em tempo real.
 
@@ -95,7 +98,6 @@ Apos o Chat estar no ar, com o objetivo de analisar os padrões de uso, acompanh
 - Construção de FAQs
 
 <em>Design meramente ilustrativo<em>
-[Design Demonstrativo](https://preview--chatmanage-gateway.lovable.app/faq)
 
 ### Suporte ao Desenvolvedor
 
