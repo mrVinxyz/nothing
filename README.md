@@ -30,7 +30,7 @@ A interface será desenvolvida utilizando **LitJS**, garantindo um sistema leve,
 
 ## Suporte AI
 
-O suporte utilizara dados que foram previalmente processados com técnicas de RAG e armazenados em um banco de dados vetorial (PG). Esses dados serão utilizados para alimentar o modelo de IA, para responder às solicitações do usuário.
+O suporte utilizara dados que foram previalmente processados com técnicas de RAG e armazenados em um banco de dados vetorial. Esses dados serão utilizados para alimentar o modelo de IA, para responder às solicitações do usuário.
 
 ### Arquitetura
 ![Suporte AI](chat_support_arc.png)
