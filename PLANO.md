@@ -41,9 +41,9 @@ O suporte utilizara dados que foram previalmente processados com técnicas de RA
 1 - Início da Solicitação (Cliente → Servidor)
 O Cliente (interface do usuário) envia uma solicitação de suporte ao Servidor.
 
-2 - Recuperação de Dados (Servidor → Banco de Dados Postgres)
+2 - Recuperação de Dados (Servidor → Banco de Dados)
 - O servidor vectoriza o Prompt do usuário, transformando a solicitação em um formato adequado para consultar o banco de dados.
-- O Servidor consulta o Banco de Dados Postgres para recuperar os dados armazenados.
+- O Servidor consulta o Banco de Dados para recuperar os dados armazenados.
 - O Banco de Dados retorna os dados solicitados ao servidor.
 
 3 - Processamento via API de LLM (Servidor → API de LLM)
@@ -65,9 +65,9 @@ O Cliente (interface do usuário) envia uma solicitação de suporte ao Servidor
 1 - Início da Solicitação (Cliente → Servidor)
 O Cliente (interface do usuário) envia uma solicitação de suporte ao Servidor.
 
-2 - Recuperação de Dados (Servidor → Banco de Dados Postgres)
+2 - Recuperação de Dados (Servidor → Banco de Dados)
 - O servidor vectoriza o Prompt do usuário, transformando a solicitação em um formato adequado para consultar o banco de dados.
-- O Servidor consulta o Banco de Dados Postgres para recuperar os dados armazenados.
+- O Servidor consulta o Banco de Dados para recuperar os dados armazenados.
 - O Banco de Dados retorna os dados solicitados ao servidor.
 
 3 - Consulta na API do Jira
@@ -96,8 +96,6 @@ Apos o Chat estar no ar, com o objetivo de analisar os padrões de uso, acompanh
 - Historico de conversas
 - Analise de perguntas
 - Construção de FAQs
-
-<em>Design meramente ilustrativo<em>
 
 ### Suporte ao Desenvolvedor
 
